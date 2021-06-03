@@ -1,7 +1,7 @@
 # projeto-pdi
 Projeto final da disciplina de PDI
 
-# Solucionador de Cubo Mágico utilizando processamento de imagens (WIP)
+# Solucionador de Cubo Mágico utilizando processamento de imagens
 Estudantes:
 
 Fernando Akio Tutume de Salles Pucci fernandopucci@usp.br 8957197
