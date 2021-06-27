@@ -35,18 +35,18 @@ E por último, é utilizado o Hough Transform para identificação de linhas, as
 <a href="https://github.com/aqilputi/projeto-pdi/blob/main/outputs/Figure_1_lines.png"><img src="https://github.com/aqilputi/projeto-pdi/blob/main/outputs/Figure_1_lines.png" width="500" height="500"/></a>
 
 ### Coordenadas adquiridas de cada vértice
-[0, 0], [74, 0], [149, 0], [221, 0]
-[0, 76], [74, 76], [149, 76], [221, 76]
-[0, 151], [74, 151], [149, 151], [221, 151]
-[0, 221], [74, 221], [149, 221], [221, 221]
+#### [0, 0], [74, 0], [149, 0], [221, 0]\n
+#### [0, 76], [74, 76], [149, 76], [221, 76]\n
+#### [0, 151], [74, 151], [149, 151], [221, 151]\n
+#### [0, 221], [74, 221], [149, 221], [221, 221]\n
 
 
 Com isso feito, podemos utilizar essa nova imagem para separar a imagem original em 9 imagens diferentes, uma para cada peça da face. Com a imagem de cada peça de cada face, criamos uma margem interna, onde retiramos as partes mais externas da imagem para podermos reduzir o ruído. Após isso, podemos finalmente fazer uma média da cor de todos os pixels dessa imagem. Como essa cor vai estar em RGB, precisamos convertê-la para HSL, para depois podermos comparar a cor obtida com valores de cores que já conhecemos, assim podemos aplicar uma label para cada cor. 
 
 ### Saída para o Solver
-['BlUE', 'RED', 'YELLOW']
-['GREEN', 'RED', 'BlUE']
-['ORANGE', 'RED', 'BlUE']
+#### ['BlUE', 'RED', 'YELLOW']\n
+#### ['GREEN', 'RED', 'BlUE']\n
+#### ['ORANGE', 'RED', 'BlUE']\n
 
 
 Tendo o cubo mágico em forma de labels, podemos então usar um algoritmo de resolução de cubo mágico pronta da internet para resolver o cubo mágico.
