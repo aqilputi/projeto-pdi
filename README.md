@@ -14,7 +14,7 @@ Yan Crisóstomo Rohwedder yanrohwedder@usp.br 9779263
 
 O objetivo principal do projeto consiste em desenvolver um conversor de imagens para resolução de cubo mágico utilizando seis imagens como entrada, uma para cada face do cubo.
 
-As imagens utilizadas neste projeto são fotos tiradas pelos próprios integrantes. Cada imagem contém uma face do cubo mágico, sendo assim, são necessárias seis fotos como entrada para podermos solucionar o cubo mágico. Exemplo de imagem para entrada para uma face:
+As imagens utilizadas neste projeto são fotos tiradas pelos próprios integrantes. Cada imagem contém uma face do cubo mágico, sendo assim, são necessárias seis fotos como entrada para podermos solucionar o cubo mágico. Exemplo de imagem de uma das faces como entrada:
 
 <a href="https://github.com/aqilputi/projeto-pdi/blob/main/inputs/face_cube.jpeg"><img src="https://github.com/aqilputi/projeto-pdi/blob/main/inputs/face_cube.jpeg" width="250" height="250"/></a>
 
