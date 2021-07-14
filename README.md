@@ -54,6 +54,9 @@ Tendo o cubo mágico em forma de labels, podemos então usar um algoritmo de res
 ### Exemplo de Saída do Solver
 ##### ['B', 'B', 'B', 'E', 'L', 'Ei', 'Li', 'B']
 
+Ver notação padrão de cubo mágico em:
+https://ruwix.com/the-rubiks-cube/notation/
+
 ### Observações
 
 Nós tiramos fotos em diversas condições, em ambiente com baixa luminosidade, com boa iluminação e com flash. Na maioria dos casos, o nosso algoritmo consegue detectar corretamente as cores de cada peça do cubo. Porém, quando o flash é usado, o cubo acaba refletindo muita luz, fazendo com que grande parte da peça fique totalmente branca, daí o nosso algoritmo acaba não conseguindo detectar a cor certa.
