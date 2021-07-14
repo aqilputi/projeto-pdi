@@ -49,8 +49,10 @@ Com isso feito, podemos utilizar essa nova imagem para separar a imagem original
 ##### ['GREEN', 'RED', 'BLUE']
 ##### ['ORANGE', 'RED', 'BLUE']
 
-
 Tendo o cubo mágico em forma de labels, podemos então usar um algoritmo de resolução de cubo mágico pronta da internet para resolver o cubo mágico.
+
+### Exemplo de Saída do Solver
+##### ['B', 'B', 'B', 'E', 'L', 'Ei', 'Li', 'B']
 
 ### Observações
 
@@ -62,4 +64,4 @@ Fernando -> Ficou como o programador principal para implementação do código.
 
 Vitor -> Ficou encarregado de tirar as fotos e de descobrir uma forma de calcular os valores das cores para identificação. Também ajudou na implementação do código e no Project Report.
 
-Yan -> Ficou encarregado de fazer o Project Report e auxiliar na implementação do código.
+Yan -> Ficou encarregado de fazer o Project Report, auxiliar na implementação do código e fazer a demonstração.
