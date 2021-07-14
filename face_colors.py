@@ -9,7 +9,7 @@ def get_predominant_color(img) -> [int, int, int]:
     colors, count = np.unique(img.reshape(-1,img.shape[-1]), axis=0, return_counts=True)
     return colors[count.argmax()].tolist()
 
-def get_face_colors(face_img, cell_coord: list[list[list[int, int]]], pad):
+def get_face_colors(face_img, cell_coord: list[list[list[int, int]]], pad, labels=None):
     face_colors: list = [[],[],[]]
     for i in range(len(cell_coord)-1):
         for j in range(len(cell_coord[i])-1):
@@ -19,9 +19,10 @@ def get_face_colors(face_img, cell_coord: list[list[list[int, int]]], pad):
                     cell_coord[i][j][0]+pad:cell_coord[i][j+1][0]-pad,
                 ]
             )
-            # plt.imshow(cell_img)
-            # plt.show()
-            # input()
+            if labels:
+                plt.title(labels[i][j])
+            plt.imshow(cell_img)
+            plt.show()
             face_colors[i].append(get_predominant_color(cell_img))
 
     return face_colors
@@ -34,17 +35,13 @@ def rgb_to_hls(colors):
     return hls
 
 
-coordinates = [
-    [[0, 0], [74, 0], [149, 0], [221, 0]],
-    [[0, 76], [74, 76], [149, 76], [221, 76]],
-    [[0, 151], [74, 151], [149, 151], [221, 151]],
-    [[0, 221], [74, 221], [149, 221], [221, 221]],
-]
+def find_colors(image, coordinates):
+    img = imageio.imread(image)
+    colors = get_face_colors(img, coordinates, 20)
+    hls = rgb_to_hls(colors)
 
-img = imageio.imread("face_cube.jpeg")
+    return hls
 
-colors = get_face_colors(img, coordinates, 20)
-hls = rgb_to_hls(colors)
-
-for row in hls:
-    print(row)
+def show_colors(image, coordinates, labels):
+    img = imageio.imread(image)
+    get_face_colors(img, coordinates, 20, labels=labels)
