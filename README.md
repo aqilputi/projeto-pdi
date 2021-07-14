@@ -52,4 +52,14 @@ Com isso feito, podemos utilizar essa nova imagem para separar a imagem original
 
 Tendo o cubo mágico em forma de labels, podemos então usar um algoritmo de resolução de cubo mágico pronta da internet para resolver o cubo mágico.
 
-Por se tratar de uma entrega parcial, o código é apenas um protótipo, com intuito de mostrar sua funcionalidade, por isso, o código não está bem organizado nem muito comentado.
+### Observações
+
+Nós tiramos fotos em diversas condições, em ambiente com baixa luminosidade, com boa iluminação e com flash. Na maioria dos casos, o nosso algoritmo consegue detectar corretamente as cores de cada peça do cubo. Porém, quando o flash é usado, o cubo acaba refletindo muita luz, fazendo com que grande parte da peça fique totalmente branca, daí o nosso algoritmo acaba não conseguindo detectar a cor certa.
+
+### Cargos
+
+Fernando -> Ficou como o programador principal para implementação do código.
+
+Vitor -> Ficou encarregado de tirar as fotos e de descobrir uma forma de calcular os valores das cores para identificação. Também ajudou na implementação do código e no Project Report.
+
+Yan -> Ficou encarregado de fazer o Project Report e auxiliar na implementação do código.
