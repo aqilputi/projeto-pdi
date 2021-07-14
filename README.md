@@ -45,12 +45,10 @@ E por último, é utilizado o Hough Transform para identificação de linhas, as
 Com isso feito, podemos utilizar essa nova imagem para separar a imagem original em 9 imagens diferentes, uma para cada peça da face. Com a imagem de cada peça de cada face, criamos uma margem interna, onde retiramos as partes mais externas da imagem para podermos reduzir o ruído. Após isso, podemos finalmente fazer uma média da cor de todos os pixels dessa imagem. Como essa cor vai estar em RGB, precisamos convertê-la para HSL, para depois podermos comparar a cor obtida com valores de cores que já conhecemos, assim podemos aplicar uma label para cada cor. 
 
 Repositório do solver: https://github.com/pglass/cube
-from rubik.cube import Cube
-
-c = Cube("OOOOOOOOOYYYWWWGGGBBBYYYWWWGGGBBBYYYWWWGGGBBBRRRRRRRRR")
-
-print(c)
-
+```python
+>>> from rubik.cube import Cube
+>>> c = Cube("OOOOOOOOOYYYWWWGGGBBBYYYWWWGGGBBBYYYWWWGGGBBBRRRRRRRRR")
+>>> print(c)
     OOO
     OOO
     OOO
@@ -60,6 +58,7 @@ YYY WWW GGG BBB
     RRR
     RRR
     RRR
+```
 
 
 ### Saída para o Solver
